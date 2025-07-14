@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .main{
+           width: 80vw;
+           height: 70vh;
+           /* border: 2px solid black; */
+           margin: 40px;
+           display: flex;
+           flex-direction: column ;
+           align-items: center;
+           justify-content: center;
+           gap: 1rem;
+           background-color: bisque;
+        }
+        .element{
+            width: 70vw;
+            height: 15vh;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row;
+        }
+         .element-2
+         {      height: 30vh;
+               display: flex;
+               flex-direction: row;
+               gap: 1rem;
+         }
+         .item{
+            width: 120px;
+            /* border:2px solid green; */
+            display: flex;
+            
+         }
+         .item-2{
+             display: flex;
+             flex-direction: row;
+             flex-grow: 1;
+             gap: 1rem;  
+             justify-content: center;
+             align-items: flex-end;
+             background-color: lightcoral;
+
+         }
+         .ab{
+            width:50px;
+            height:50px;
+            /* border: 2px solid black; */
+            margin-bottom: 30px;
+            background-color: beige;
+            color: black;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+         }
+         .element-1
+         {
+            background-color: aqua;
+         }
+         .element-3
+         {
+            background-color: aqua;
+         }
+         .item-1
+         {
+            background-color: blue;
+         }
+        
+            
+      
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="element element-1"></div>
+        <div class="element element-2">
+            <div class="item item-1"></div>
+            <div class="item item-2">
+                <div class="ab ab-1"></div>
+                <div class="ab ab-1"></div>
+                <div class="ab ab-1"></div>
+            </div>
+        </div>
+        <div class="element element-3"></div>
+    </div>
+
+</body>
+
+</html>

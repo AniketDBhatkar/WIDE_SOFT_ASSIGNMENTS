@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box-1</title>
+    <style>
+        .main {
+            width: 80vh;
+            height: 60vh;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            margin: 20px 40px;
+            row-gap: 0.5rem;
+        }
+
+        .container {
+            width: 80vh;
+            height: 15vh;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .item {
+            width: 60px;
+            background-color: chartreuse;
+            border: 5px solid black;
+        }
+
+        .container-1 {
+            gap: 2rem;
+        }
+
+        .item-2 {
+            flex-grow: 1;
+        }
+
+        .container-2 {
+            gap: 1rem;
+        }
+
+        .item-4 {
+            flex-grow: 1;
+        }
+
+        .item-6{
+            flex-grow: 0.1;
+        }
+        .container-3{
+            gap:1rem;
+        }
+
+        .item-8
+        {
+            flex-grow: 0.1;
+        }
+        
+        .item-9
+        {
+            flex-grow: 1;
+        }
+        .container-4{
+            gap:1.5rem;
+        }
+        .item-10{
+            flex-grow: 0.5;
+        }
+        .item-12
+        {
+            flex-grow: 0.5;
+        }
+        .item-14
+        {
+            flex-grow: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container container-1">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+        </div>
+        <div class="container container-2">
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+        </div>
+        <div class="container container-3">
+            <div class="item item-7"></div>
+            <div class="item item-8"></div>
+            <div class="item item-9"></div>
+        </div>
+        <div class="container container-4">
+            <div class="item item-10"></div>
+            <div class="item item-11"></div>
+            <div class="item item-12"></div>
+            <div class="item item-13"></div>
+            <div class="item item-14"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 5rem auto;
+            position: relative;
+            background-color: brown;
+        }
+        .element{
+             width: 100px;
+             height: 100px;
+             border: 1px solid black;
+             position: absolute;
+        }
+        
+        .element-1{
+          
+            top: 0px;
+            left: 0px;
+            background-color: blue;
+        }
+        .element-2{
+            
+            top: 0px;
+            left: 100%;
+            transform: translatex(-100%);
+            background-color:chartreuse;
+        }
+        .element-3{
+          
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: crimson;
+        }
+        .element-4{
+          
+            top: 100%;
+           transform: translatey(-100%);
+           background-color: gold;
+        }
+        .element-5{
+          
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%,-100%);
+            background-color: mediumorchid;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element element-1"></div>
+        <div class="element element-2"></div>
+        <div class="element element-3"></div>
+        <div class="element element-4"></div>
+        <div class="element element-5"></div>
+    </div>
+</body>
+</html>

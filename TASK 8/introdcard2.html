@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outside {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 5rem auto;
+            display: flex;
+            background-color: azure;
+        }
+        
+        .leftdata {
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            align-content: center;
+            font-size: 50px;
+            padding: 1rem;
+            color: blue;
+            font-weight: bold; 
+            
+        }
+        
+        .rightdata {
+            /* border: 1px solid black; */
+            filter: drop-shadow(10px 10px 10px grey);
+            border-radius: 16px;
+            display: flex;
+            flex-grow: 1;
+            margin: 1rem;
+            flex-direction: column;
+        }
+        .blue{
+            /* border: 1px solid black; */
+            /* border-radius: ; */
+            flex-grow:2;
+            background-color: blue;
+        }
+        .white{
+            border: 1px solid black;
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .code
+        {
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            text-align: center;
+            align-content: center;
+            font-weight: bold;  
+        }
+        b{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .youtube{
+                border: 1px solid black;
+                flex-grow: 1;
+        }
+
+        .logo{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 1px 40px;  
+        }
+
+        .image>img{
+            width: 30px;
+            height: 30px;
+        }
+
+        .sub{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 5px 10px;
+            align-items: center;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .like{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            gap: 1rem;
+            margin: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+      image{
+        /* border: 1px solid black; */
+        flex-grow: 1;
+      }
+        
+        .subscribe{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            border-radius:50px;
+            text-align: center;
+            background-color: blue;
+        }
+        .message{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            border-radius: 50px;
+            text-align: center;
+            background-color: blue;
+        }
+        .image2>img{
+            width: 20px;
+            height: 20px;
+        }
+        .image2{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            text-align: center;
+            /* align-content: center; */
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        .rightdata{
+            position: relative;
+        }
+        .middle{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10%;
+        }
+        .porgi{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+       
+        
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="outside">
+        <div class="leftdata">
+            Profile <br>Card <br> UI Design
+        </div>
+        <div class="rightdata">
+            <div class="blue"></div>
+            <div class="middle">
+                <img src="/SOURCE/card2photo.png" alt="" class="porgi">
+            </div>
+            <div class="white">
+                <div class="code">
+                    <br><br>
+                   <b>Coding lab</b> <br><br>Front-End Developer</div>
+               
+                <div class="logo">
+                    <div class="image">
+                        <img src="/SOURCE/facebook.png" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="/SOURCE/instagram.png" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="/SOURCE/twt.png" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="/SOURCE/youtube.png" alt="">
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="subscribe">Suscribe</div>
+                    <div class="message"> Message</div>
+                </div>
+                <div class="like">
+                    <div class="image2">
+                        <img src="/SOURCE/like.png" alt="">  60.4k
+                        
+                    </div>
+                    <div class="image2">
+                        <img src="/SOURCE/comment.png" alt="">20k
+                    </div>
+                    <div class="image2">
+                        <img src="/SOURCE/share.png" alt="">12.4k
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

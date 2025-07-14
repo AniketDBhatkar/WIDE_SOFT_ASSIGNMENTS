@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .outline{
+            width: 600px;
+            height: 400px;
+            /* border: 1px solid black; */
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+            background-color:aliceblue;
+
+        }
+        .top{
+            /* border: 1px dotted green; */
+            flex-grow: 1;
+            display: flex;
+            gap: 4px;
+        }
+        .bottom{
+            border: 1px solid blue;
+            flex-grow: 4;
+            display: flex;
+            gap: 4px;
+        }
+        .item{
+            /* border: 1px solid yellow; */
+            flex-grow: 1;
+            background-color:lightpink;
+        }
+        .left{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:darkblue;
+            
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+        }
+        .right
+        {
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .element{
+            flex-grow: 1;
+            /* border: 1px solid red; */
+            background-color: darkolivegreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="outline">
+        <div class="top">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <div class="box"></div>
+            </div>
+            <div class="right">
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        
+        .outside{
+            width: 800px;
+            height: 300px;
+            /* border: 1px solid black; */
+            margin: 3rem auto;
+            display: flex;
+            /* gap: 8px; */
+            background: url(/SOURCE/wave2.png);
+           
+        }
+        .left
+        {
+            border: 2px solid white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            filter: drop-shadow(10px 10px 10px grey);
+            
+        }
+
+        .data
+        {
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            gap: 1rem;  
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            filter:drop-shadow(10px 10px 10px grey);
+            background-color: lightblue;
+            padding-left: 3rem;
+            
+        }
+        .image{
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            /* border: 1px solid black; */
+        }
+        .profile{
+            flex-grow: 1;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+        
+            
+        }
+        
+
+        .image1{
+            width: 150px;
+            height: 150px;
+            object-fit:fill;
+            /* border: 1px solid black; */
+            border-radius: 90%;
+            
+        }
+        .image3{
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid black; */
+        }
+        
+        .name{
+            
+            flex-grow: 1;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 10px 10px 5px  lightblue;
+          
+        }
+        .qr
+        {
+            flex-grow: 1;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="outside">
+        <div class="left">
+            <div class="data"><img class="image" src="/SOURCE/home.png" alt=""> PLOT NO.160 MANEWADA ROAD</div>
+            <div class="data"><img class="image"   src="/SOURCE/phone.png" alt=""> +91 8380060245</div>
+            <div class="data"> <img class="image" src="/SOURCE/mail.png" alt="">aniketbhtkar786@gmail.com</div>
+            <div class="data"><img class="image"    src="/SOURCE/web.png" alt="">ABWEBSIDE.COM/ANIKET</div>
+        </div>
+        <div class="right">
+            <div class="profile">
+                <img  class="image1 " src="/SOURCE/aniketanime.png" alt="">
+            </div>
+            <div class="name">ANIKET BHATKAR <br> Web Developer</div>
+            <div class="qr">
+                <img  class="image3" src="/SOURCE/Qr.png " alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

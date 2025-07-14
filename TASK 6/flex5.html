@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .outside{
+
+            width: 600px ;
+            height: 500px;
+            border: 1px solid black;
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: column;
+            background-color: lightcoral;
+            row-gap: 1rem;
+            padding: 1rem;
+            color: white;
+            
+            
+            
+        }
+        .Header
+        {
+            border: 1px solid black;
+            flex-grow: 1;
+            background-color:aquamarine; 
+            font-size: 2rem;
+            text-align: center;
+            justify-content: center;  
+        }
+        .middle-content{
+            border: 1px solid black;
+            flex-grow: 4;
+            display: flex;
+            flex-direction: row;
+            column-gap: 1rem;
+        }
+        .footer{
+            border: 1px solid black;
+            flex-grow: 1;
+            background-color:aquamarine; 
+            text-align: center;
+            font-size: 2rem;
+        }
+        .leftcontent{
+            border: 1px solid black;
+            flex-grow: 1;
+            background-color: aqua;
+            font-size: 2rem;
+            text-align: center;
+            gap: 1rem;
+        }
+        .rightcontent{
+            border: 1px solid black;
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            background-color:tomato;
+            
+        }
+        .article{
+            border: 1px solid black;
+            flex-grow: 1;
+            margin: 5px;
+            text-align: center;
+            font-size: 2rem;
+            
+        }
+        .imagecontainer{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            border: 1px solid black;
+            gap: 1rem;
+        }
+        
+        .image{
+            border: 1px solid black;
+            flex-grow: 1;
+            background-color:beige;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <div class="Header">Header</div>
+        <div class="middle-content">
+            <div class="leftcontent">Aside</div>
+            <div class="rightcontent">
+                <div class="article"> Article</div>
+                <div class="imagecontainer">
+                    <div class="image image-1"></div>
+                <div class="image image-2"></div>
+                <div class="image image-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

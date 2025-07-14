@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        
+        .main{
+            width: 600px;
+            height: 600px;
+            /* border: 1px solid black; */
+            margin: 3rem;
+            gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* grid-template-rows: repeat(4,1fr); */
+            /* background-color: aqua; */
+        }
+
+        .element2,.element3{
+            /* border: 1px solid black; */
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .items{
+            /* border: 1px solid red; */
+            display: grid;
+            /* grid-template-columns: 1fr; */
+            background-color: aqua;
+
+        }
+        /* .elements{
+            border: 1px solid purple;
+        } */
+        .element1,.element4{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="elements element1">
+        
+        </div>
+        <div class="elements element2">
+            <div class="items items"></div>
+            <div class="items items"></div>
+            <div class="items items"></div>
+            <div class="items items"></div>
+        </div>
+        <div class="elements element3">
+            <div class="items items"></div>
+            <div class="items items"></div>
+            <div class="items items"></div>
+            <div class="items items"></div>
+        </div>
+        <div class="elements element4">
+            
+        </div>
+    </div>
+</body>
+</html>

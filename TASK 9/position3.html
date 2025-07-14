@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encore Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #fff;
+        }
+        .header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=1600&h=900') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.4);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .navbar ul li a:hover {
+            border-bottom: 2px solid white;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-content button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero-content button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-bottom {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+        .section-bottom div {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">Encore</div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">VENUE</a></li>
+                <li><a href="#">REGISTER</a></li>
+            </ul>
+        </div>
+
+        <div class="hero-content">
+            <h1>Dedicated to AltCampus' friends and family</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate repudiandae alias at fugit officia facere</p>
+            <button>Register Now</button>
+        </div>
+    </section>
+
+    <section class="section-bottom">
+        <div>ACTIVITIES</div>
+        <div>SCHEDULE</div>
+        <div>VENUE</div>
+    </section>
+
+</body>
+</html>
