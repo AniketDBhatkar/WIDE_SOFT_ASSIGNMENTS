@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encore - AltCampus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            color: black;
+            padding: 30px 20px;
+            flex-wrap: wrap;
+        }
+        .info div {
+            flex: 1;
+            min-width: 100px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Encore</div>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">EVENTS</a>
+            <a href="#">SCHEDULE</a>
+            <a href="#">VENUE</a>
+            <a href="#">REGISTER</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Dedicated to AltCampus' friends and family</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptate repudiandae alias at fugit officia facere.</p>
+        <button>Register Now</button>
+    </div>
+
+    <div class="info">
+        <div>ACTIVITIES</div>
+        <div>SCHEDULE</div>
+        <div>VENUE</div>
+    </div>
+
+</body>
+</html>
