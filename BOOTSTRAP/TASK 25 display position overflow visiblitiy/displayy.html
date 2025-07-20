@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+        href="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
+
+    <style>
+        .element1 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .element2 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .element3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .element4 {
+            width: 200px;
+            height: 200px;
+
+            /* NOTE: its not support external height and widht */
+        }
+
+        .container {
+
+            width: 400px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="element1 bg-success d-inline-block "></div>
+    <div class="element2 bg-primary d-inline-block"></div>
+    <div class="element3 bg-dark d-none"> There is no ele</div>
+    <div class="element4 bg-warning d-inline">its not supoort external height an widht</div>
+
+
+    <h1 class=" m-4 "> Display-flex</h1>
+
+    <div class="container border border-dark border-2 d-flex flex-column bg-white gap-3 ">
+        <div class="top flex-grow-1   border border-danger border-2 bg-primary"></div>
+        <div class="container2 d-flex flex-row border border-dark border-2 flex-grow-1 gap-3">
+            <div class="right flex-grow-1 border border-dark border-2 bg-warning"></div>
+            <div class="left flex-grow-1 border border-dark border-2 d-flex flex-column gap-3">
+                <div class="item item-1 flex-grow-1 border border-dark border-2 bg-secondary"></div>
+                <div class="item item-1 flex-grow-1 lex-grow-1 border border-dark border-2 bg-info"></div>
+                <div class="item item-1 flex-grow-1 lex-grow-1 border border-dark border-2 d-flex flex-row gap-3">
+                    <div class="item item1 flex-grow-1 border border-dark border-2 bg-danger "></div>
+                    <div class="item item2 flex-grow-1 border border-dark border-2 bg-danger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
