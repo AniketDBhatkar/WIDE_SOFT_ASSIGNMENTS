@@ -1,129 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../BOOTSTRAP/TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
 
-    <style>
-        table {
-            width: 500px;
-            height: 600px;
-            margin: 20px;
-            border: 2px solid brown;
-            padding: 10px;
-            background-color: red;
-            color: white;
-        }
-
-        h1 {
-            text-align: justify;
-            font-style: normal;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif padding: 40px;
-        }
-    </style>
+    
 </head>
+<body >
+    
+     <div class="container-fluid">
+        <div class="container my-5 bg-danger-subtle">
+            
+            <h1 class="p-3 px-auto text-center">Student Registeration Form</h1>
 
-<body>
-    <table>
-        <h1>FeedBack Form</h1>
-        <tr>
-            <td>
+            <div class="form-control shadow ">
 
-                <ul>
-                    <li>
-                        <label for="n1">Name:</label>
-                        <input type="text" id="n1" required>
-                    </li>
-                    <li>
-                        <label for="n2">Email:</label>
-                        <input type="email" id="n2" required>
-                    </li>
-                    <li>
-                        <label for="n3">Password:</label>
-                        <input type="text" id="n3" required>
-                    </li>
-                </ul>
-                <li>
-                    please check all the emotions that apply to you:
-                    <ul>
-                        <li>
-                            <label for="n4">Angry</label>
-                            <input type="checkbox">
-                        </li>
-                        <li>
-                            <label for="n4">Sad</label>
-                            <input type="checkbox">
-                        </li>
-                        <li>
-                            <label for="n4">Happy</label>
-                            <input type="checkbox">
-                        </li>
-                        <li>
-                            <label for="n4">Ambivalent</label>
-                            <input type="checkbox">
-                        </li>
-                    </ul>
-                <li>
-                    How Satisfied Were you with our services
-                    <ul>
-                        <li>
-                            <label for="n8"> Very Satisfied</label>
-                            <input type="radio" id="n8" name="emotions">
-                        </li>
-                        <li>
-                            <label for="n8"> Satisfied</label>
-                            <input type="radio" id="n8" name="emotions">
-                        </li>
-                        <li>
-                            <label for="n8"> Dont Care</label>
-                            <input type="radio" id="n8" name="emotions">
-                        </li>
-                        <li>
-                            <label for="n8"> Disatisfied</label>
-                            <input type="radio" id="n8" name="emotions">
-                        </li>
-                        <li>
-                            <label for="n8"> Very Disatisfied</label>
-                            <input type="radio" id="n8" name="emotions">
-                        </li>
-                    </ul>
-                </li>
-                </li>
-                <li>
-                    <label for="n10">Futher Comments</label>
-                    <textarea name="" id="n10"></textarea>
-                </li>
-                <li>
-                    <label for="n11"> Bio photo:</label>
-                    <input type="file" required>
-                </li>
-                <li>
-                    <label for="n12">Location Validation</label>
-                    <select name="" id="n12">
-                        <option value="">Select Loaction</option>
-                        <option value="">Nagpur
-                            <optgroup>Manewada</optgroup>
-                            <optgroup>Civil Line</optgroup>
-                            <optgroup>Besa</optgroup>
-                        </option>
-                        <option value="">Mumbai</option>
-                        <option value=""> Delhi</option>
-                        <option value="">Pune</option>
+                <label for="name1">Roll No :</label>
+                <input class="mb-3" type="text" id="name1" required>
+                <br>
+                <label for="name2">Student Name :</label>
+                <input type="text"  id=" name2" placeholder="First Name" required>
+                <label for="name3"></label>
+                <input type="text" class="mb-3" placeholder="Last Name" required>
+                <br>
+                <label for="mane3">Father Name:</label>
+                <input type="text"  class="mb-3" id="mane3" required >
+                <br>
+                <label for="date">Date of Birth :</label>
+                <input type="date" class="mb-3" id="date" required>
+                <br>
+                <label for="mob">Mobile No :</label>
+                <select name="" id="">
+                    <option value="">+91</option>
+                      <option value="">+92</option>
+                        <option value="">+93</option>
+                          <option value="">+94</option>
+                </select>
+                <input type="text"  class="mb-3">
+
+                <br>
+                <label for="email">Email id :</label>
+                <input type="email" class=" mb-3" required>
+                <br>
+
+                <label for="pass">Password :</label>
+                <input type="password" class="mb-3" required>
+                <br>
+                <label for="g1">Gender :
+                    <input type="radio" name="gender" required> Male
+                    <input type="radio" class="mb-3" name="gender" required >Female
+                </label>
+                <br>
+                <label for="dep" class="mb-3 ">Department :
+                    <input type="checkbox">CSE
+                    <input type="checkbox">IT
+                    <input type="checkbox">ECE
+                    <input type="checkbox">Civil
+                    <input type="checkbox">Mechnical
+                </label>
+                <br>
+                <label for="course" class="mb-3"> Course :
+                    <select name="" id="course">
+                        <option value="" selected>----------Select Current Course----------</option>
+                        <option value="">MERN Stack</option>
+                        <option value="">Data Analystic</option>
+                        <option value="">Cyber Security</option>
+                        <option value="">Networking</option>
+                        <option value="">Devpos</option>
                     </select>
-                </li>
-                <br><br>
-                <li>
-                    <button  type="submit" style="background-color: blue;">Submit</button>
-                </li>
-            </td>
+                </label>
+                <br>
+                <label for="photo">Student Photo:
 
-        </tr>
+                    <input type="file" class="mb-3" id="photo" >
+
+                </label>
+                <br>
+                <label for="city" class="mb-3">City :
+                    <input type="text" required>
+                </label>
+                <br>
+                <label for="add" class="mb-3">Address :
+                    <input type="text">
+                </label>
+                <br>
+
+                
+                
+                <div class="d-flex justify-content-center mt-5 ">
+                    <button type="submit" class="bg-success rounded-2 shadow">Register</button>
+                </div>
 
 
 
-    </table>
+            </div>
+     </div>
+
 </body>
-
 </html>
