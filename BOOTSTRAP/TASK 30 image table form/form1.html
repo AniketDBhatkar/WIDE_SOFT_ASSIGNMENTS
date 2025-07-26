@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../BOOTSTRAP/TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet"
+        href="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
 
-    
+
+
 </head>
-<body >
-    
-     <div class="container-fluid">
-        <div class="container my-5 bg-danger-subtle">
-            
-            <h1 class="p-3 px-auto text-center">Student Registeration Form</h1>
 
-            <div class="form-control shadow ">
+<body>
 
-                <label for="name1">Roll No :</label>
-                <input class="mb-3" type="text" id="name1" required>
-                <br>
-                <label for="name2">Student Name :</label>
-                <input type="text"  id=" name2" placeholder="First Name" required>
-                <label for="name3"></label>
-                <input type="text" class="mb-3" placeholder="Last Name" required>
-                <br>
-                <label for="mane3">Father Name:</label>
-                <input type="text"  class="mb-3" id="mane3" required >
-                <br>
-                <label for="date">Date of Birth :</label>
-                <input type="date" class="mb-3" id="date" required>
-                <br>
-                <label for="mob">Mobile No :</label>
-                <select name="" id="">
-                    <option value="">+91</option>
-                      <option value="">+92</option>
-                        <option value="">+93</option>
-                          <option value="">+94</option>
-                </select>
-                <input type="text"  class="mb-3">
+   
+        <div class="container-fluid ">
+            <div class="container my-5 bg-danger-subtle form-control border border-info-subtle border-3">
 
-                <br>
-                <label for="email">Email id :</label>
-                <input type="email" class=" mb-3" required>
-                <br>
+                <h1 class="p-3 px-auto text-center border border-white border-3 rounded-3 shadow my-3">Student
+                    Registeration
+                    Form</h1>
 
-                <label for="pass">Password :</label>
-                <input type="password" class="mb-3" required>
-                <br>
-                <label for="g1">Gender :
-                    <input type="radio" name="gender" required> Male
-                    <input type="radio" class="mb-3" name="gender" required >Female
-                </label>
-                <br>
-                <label for="dep" class="mb-3 ">Department :
-                    <input type="checkbox">CSE
-                    <input type="checkbox">IT
-                    <input type="checkbox">ECE
-                    <input type="checkbox">Civil
-                    <input type="checkbox">Mechnical
-                </label>
-                <br>
-                <label for="course" class="mb-3"> Course :
-                    <select name="" id="course">
-                        <option value="" selected>----------Select Current Course----------</option>
-                        <option value="">MERN Stack</option>
-                        <option value="">Data Analystic</option>
-                        <option value="">Cyber Security</option>
-                        <option value="">Networking</option>
-                        <option value="">Devpos</option>
-                    </select>
-                </label>
-                <br>
-                <label for="photo">Student Photo:
+                <div   class="  element form-control bg-success-subtle  rounded-3 border border-white border-3 bg shadow ">
 
-                    <input type="file" class="mb-3" id="photo" >
+                    <div class="d-flex gap-2">
+                        <label for="name1" class="form-label">Roll No:</label>
+                        <input class="form-control" type="text" id="name1" required>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-2">
+                        <label for="name2">Student Name :</label>
+                        <input type="text" class="form-control" id=" name2" placeholder="First Name" required>
+                        <!-- <label for="name3"></label> -->
+                        <input type="text" class="form-control" placeholder="Middle Name" required>
+                        <br>
+                        <!-- <label for="mane3" class="form-label">Father Name:</label> -->
+                        <input type="text" class="form-control" id="mane3" placeholder="Last Name">
+                    </div>
+                    <br>
+                    <div class="d-flex ">
+                        <label for="date" class="form-label ">Date of Birth :</label>
+                        <input type="date" class="form-control w-25" id="date" required>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-2">
+                        <label for="mob">Mobile No :</label>
+                        <select name="" id="" class="form-select w-25">
+                            <option value="">+91</option>
+                            <option value="">+92</option>
+                            <option value="">+93</option>
+                            <option value="">+94</option>
+                        </select>
+                        <input type="number" class="form-control" required>
+                    </div>
 
-                </label>
-                <br>
-                <label for="city" class="mb-3">City :
-                    <input type="text" required>
-                </label>
-                <br>
-                <label for="add" class="mb-3">Address :
-                    <input type="text">
-                </label>
-                <br>
+                    <br>
+                    <div class="d-flex gap-2">
+                        <label for="email" class="form-label ">Email id:</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <br>
 
-                
-                
-                <div class="d-flex justify-content-center mt-5 ">
-                    <button type="submit" class="bg-success rounded-2 shadow">Register</button>
+                    <div class="d-flex gap-2">
+                        <label for="pass" class="form-label">Password:</label>
+                        <input type="password" class="form-control " required>
+                    </div>
+
+                    <div class="form-text text-center text-dark">Your password must be 8-20 characters long, contain
+                        letters and numbers, and must
+                        not contain spaces, special characters, or emoji.</div>
+
+                    <br>
+                    <div class="d-flex gap-2">
+                        <label for="g1" class=" form-label">Gender:</label>
+                        <input type="radio" name="gender" class="form-check-input" required> Male
+                        <input type="radio" class=" form-check-input" name="gender" required>Female
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dep" class="form-label d-flex gap-2">Department :
+                            <input type="checkbox" class="form-check-input ">CSE
+                            <input type="checkbox" class="form-check-input">IT
+                            <input type="checkbox" class="form-check-input">ECE
+                            <input type="checkbox" class="form-check-input">Civil
+                            <input type="checkbox" class="form-check-input">Mechnical
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="course" class="form-label d-flex gap-2">Course:
+                            <select name="" id="course" class="form-select">
+                                <option value="" selected>----------Select Current Course----------</option>
+                                <option value="">MERN Stack</option>
+                                <option value="">Data Analystic</option>
+                                <option value="">Cyber Security</option>
+                                <option value="">Networking</option>
+                                <option value="">Devpos</option>
+                            </select>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="d-flex ">
+                        <label for="photo" class="form-label">StudentPhoto:</label>
+                        <input type="file" class="form-control" id="photo" multiple>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-2">
+                        <label for="city" class="form-label">City:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-2">
+                        <!-- <label for="add" class="form-label">Address : -->
+                        Address:<textarea name="" id="add" class="form-control"></textarea>
+                        </label>
+                    </div>
+                    <br>
+
+                    <div class="d-flex justify-content-center  form-control" style="filter: drop-shadow(10px 10px 5px grey);">
+                        <button type="submit"
+                            class=" bg-warning rounded-2 shadow text-dark form-control">Register</button>
+                    </div>
+
+
+
                 </div>
-
-
-
             </div>
-     </div>
+
+        </div>
+   
 
 </body>
+
 </html>
