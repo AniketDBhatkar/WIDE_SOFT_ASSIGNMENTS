@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
+
+    <script
+        src="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid bg-warning-subtle ">
+        <div class="container border border-1 border-danger p-5 ">
+
+            <h3 class="mb-4">Offcanvas start </h3>
+            <button class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#element">Offcanvas Open</button>
+        </div>
+        <div class="offcanvas offcanvas-start " id="element">
+
+            <button data-bs-dimiss="offcanvas" class="btn btn-danger">Offcanvas Close</button>Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+        </div>
+
+       
+         <div class="container border border-1 border-danger p-5 my-5">
+
+            <h3 class="mb-4">Offcanvas End </h3>
+            <button data-bs-toggle="offcanvas" class="btn btn-success"data-bs-target="#element2">open/close</button>
+        </div>
+        <div class="offcanvas offcanvas-end" id="element2">
+            <div class="bg-danger">
+                <h1>aniket</h1>
+                <button data-bs-dismiss="offcanvas">open/close</button>
+            </div>
+    
+        </div>
+
+         <div class="container border border-1 border-danger p-5 my-5">
+            <h3 class="mb-4">Offcanvas bottom </h3>
+            <button data-bs-toggle="offcanvas" class="btn btn-success"data-bs-target="#element4">open/close</button>
+        </div>
+        <div class="offcanvas offcanvas-bottom" id="element4">
+            <div class="bg-danger">
+                <h1>aniket</h1>
+                <button data-bs-dismiss="offcanvas">open/close</button>
+            </div>
+    
+        </div>
+
+         <div class="container border border-1 border-danger p-5 my-5">
+            <h3 class="mb-4">Body scrolling  </h3>
+            <button data-bs-toggle="offcanvas" class="btn btn-success" data-bs-target="#element3">open/close</button>
+            <p class="m-4 border border-dark p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae doloribus explicabo hic quasi vitae quidem similique deleniti, accusantium ipsam. Praesentium sint, est maiores veniam laudantium alias. Expedita, tempore dolor.</p>
+        </div>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true"  data-bs-backdrop="false" id="element3">
+            <div class="bg-danger">
+                <h1>aniket</h1> 
+                <button data-bs-dismiss="offcanvas">open/close</button>
+            </div>
+    
+        </div>
+
+               
+              <div class="container border border-1 border-danger p-5 my-5">
+
+                <h3 class="mb-4">Body scrolling and backdrop </h3>
+            <button data-bs-toggle="offcanvas" class="btn btn-success" data-bs-target="#element5">open/close</button>
+            <p class="m-4 border border-dark p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae doloribus explicabo hic quasi vitae quidem similique deleniti, accusantium ipsam. Praesentium sint, est maiores veniam laudantium alias. Expedita, tempore dolor.</p>
+        </div>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true"   id="element5">
+            <div class="bg-danger">
+                <h1>aniket</h1> 
+                <button data-bs-dismiss="offcanvas">open/close</button>
+            </div>
+    
+        </div>
+    </div>
+
+
+</body>
+
+</html>
