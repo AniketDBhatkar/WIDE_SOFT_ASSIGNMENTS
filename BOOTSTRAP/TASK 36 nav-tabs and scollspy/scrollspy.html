@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollSpy Example</title>
+
+    <link rel="stylesheet"
+        href="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/css/bootstrap.css">
+
+    <script
+        src="../TASK 21 Connect Bootstrap/BootStrap Offline Library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .section {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top z-3 px-3" id="navbar">
+
+                <span class="navbar-brand fw-bold fs-3">logo</span>
+
+                <ul class="navbar-nav nav-pills ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#element1">Section1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#element2">Section2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#element3">Section3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#element4">Section4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#element5">Section5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top:80px">
+        <div class="container">
+            <div class="section bg-danger" id="element1"></div>
+            <div class="section bg-success" id="element2"></div>
+            <div class="section bg-dark text-white" id="element3"></div>
+            <div class="section bg-primary" id="element4"></div>
+            <div class="section bg-warning" id="element5"></div> 
+        </div>
+    </div>
+
+</body>
+
+</html>
